@@ -61,7 +61,7 @@ public class ProfessionalConsoleFactory {
      */
     @Bind(aggregate = true, optional = true)
     public void bindConsole(IConsole console, Dictionary properties) {
-        if (!Constants.SECURED_CONSOLE_PID.equals(properties.get("factory.name"))) {
+        if (!Constants.PRODUCTION_MODE_CONSOLE_PID.equals(properties.get("factory.name"))) {
             return;
         }
         properties.put(Constants.ENABLE_SECURITY, true);
