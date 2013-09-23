@@ -41,6 +41,17 @@
       <version>1.0.0-SNAPSHOT</version>
     </dependency>
     <dependency>
+      <groupId>com.peergreen.webconsole.security</groupId>
+      <artifactId>security-base</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.vaadin</groupId>
+      <artifactId>vaadin-server</artifactId>
+      <version>${vaadin.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
       <groupId>org.apache.felix</groupId>
       <artifactId>org.apache.felix.ipojo.annotations</artifactId>
       <version>1.10.1</version>
@@ -59,7 +70,7 @@
       <scope>provided</scope>
     </dependency>
 
-    <!-- Extensions to add to web console community edition -->
+    <!-- Extensions to add to web console professional edition -->
     <dependency>
       <groupId>com.peergreen.webconsole</groupId>
       <artifactId>home-scope</artifactId>
